@@ -1,0 +1,42 @@
+{
+  "extensionName": {
+    "message": "Icon Blog Cosillas de Juansal",
+    "description": "Open a menu to access the blog directly."
+  },
+
+  "extensionDescription": {
+    "message": "Demonstrates the contextMenus API.",
+    "description": "Description of the add-on."
+  },
+
+  "contextMenuItemBlogPaginaPrincipal": {
+    "message": "Homepage",
+    "description": "Open homepage."
+  },
+
+  "contextMenuItemIndiceEtiqueta": {
+    "message": "Index by tag",
+    "description": "Open index by tag."
+  },
+
+  "contextMenuItemLinksInteresantes": {
+    "message": "Interesting Links",
+    "description": "Open interesting links."
+  },
+
+  "contextMenuItemDocumentosCompartidos": {
+    "message": "Shared Documents",
+    "description": "Open shared documents."
+  },
+
+  "contextMenuItemPluginsNavegadores": {
+    "message": "Browser Plugins",
+    "description": "Open browser plugins."
+  },
+
+  "contextMenuItemProyectos": {
+    "message": "Projects",
+    "description": "Open projects."
+  }
+
+}

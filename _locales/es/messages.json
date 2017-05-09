@@ -1,0 +1,41 @@
+{
+  "extensionName": {
+    "message": "Icono Blog Cosillas de Juansal",
+    "description": "Abre un menú para acceder directamente al blog."
+  },
+
+  "extensionDescription": {
+    "message": "Abre un menú para acceder directamente al blog.",
+    "description": "Abre un menú para acceder directamente al blog."
+  },
+
+  "contextMenuItemBlogPaginaPrincipal": {
+    "message": "Página principal",
+    "description": "Abre la página principal."
+  },
+  "contextMenuItemIndiceEtiqueta": {
+    "message": "Índice por etiqueta",
+    "description": "Abre el índice por etiqueta."
+  },
+
+  "contextMenuItemLinksInteresantes": {
+    "message": "Links interesantes",
+    "description": "Abre los links interesantes."
+  },
+
+  "contextMenuItemDocumentosCompartidos": {
+    "message": "Documentos compartidos",
+    "description": "Abre los documentos compartidos."
+  },
+
+  "contextMenuItemPluginsNavegadores": {
+    "message": "Plugins navegadores",
+    "description": "Abre los plugins de navegadores."
+  },
+
+  "contextMenuItemProyectos": {
+    "message": "Proyectos",
+    "description": "Abre los proyectos."
+  }
+
+}
