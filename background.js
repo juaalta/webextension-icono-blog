@@ -3,8 +3,8 @@ Called when the item has been created, or when creation failed due to an error.
 We'll just log success/failure here.
 */
 function onCreated(n) {
-  if (browser.runtime.lastError) {
-    console.log(`Error: ${browser.runtime.lastError}`);
+  if (chrome.runtime.lastError) {
+    console.log(`Error: ${chrome.runtime.lastError}`);
   } else {
     console.log("Item created successfully");
   }
@@ -30,45 +30,45 @@ function onError(error) {
 Create all the context menu items.
 */
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
   id: "blog_pagina_principal",
-  title: browser.i18n.getMessage("contextMenuItemBlogPaginaPrincipal"),
+  title: chrome.i18n.getMessage("contextMenuItemBlogPaginaPrincipal"),
   contexts: ["all"]
 }, onCreated);
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
   id: "separator-1",
   type: "separator",
   contexts: ["all"]
 }, onCreated);
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
   id: "blog_indice_etiqueta",
-  title: browser.i18n.getMessage("contextMenuItemIndiceEtiqueta"),
+  title: chrome.i18n.getMessage("contextMenuItemIndiceEtiqueta"),
   contexts: ["all"]
 }, onCreated);
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
   id: "blog_links_interesantes",
-  title: browser.i18n.getMessage("contextMenuItemLinksInteresantes"),
+  title: chrome.i18n.getMessage("contextMenuItemLinksInteresantes"),
   contexts: ["all"]
 }, onCreated);
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
   id: "blog_documentos_compartidos",
-  title: browser.i18n.getMessage("contextMenuItemDocumentosCompartidos"),
+  title: chrome.i18n.getMessage("contextMenuItemDocumentosCompartidos"),
   contexts: ["all"]
 }, onCreated);
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
   id: "blog_plugins_navegadores",
-  title: browser.i18n.getMessage("contextMenuItemPluginsNavegadores"),
+  title: chrome.i18n.getMessage("contextMenuItemPluginsNavegadores"),
   contexts: ["all"]
 }, onCreated);
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
   id: "blog_proyectos",
-  title: browser.i18n.getMessage("contextMenuItemProyectos"),
+  title: chrome.i18n.getMessage("contextMenuItemProyectos"),
   contexts: ["all"]
 }, onCreated);
 
@@ -96,7 +96,7 @@ openOnNewTab = function(linkUrl) {
 The click event listener, where we perform the appropriate action given the
 ID of the menu item that was clicked.
 */
-browser.contextMenus.onClicked.addListener(function(info, tab) {
+chrome.contextMenus.onClicked.addListener(function(info, tab) {
   switch (info.menuItemId) {
     case "blog_pagina_principal":
       openOnNewTab("http://blog.juansal.com/");

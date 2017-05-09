@@ -3,7 +3,8 @@
   "manifest_version": 2,
   "name": "Icono Blog Cosillas de Juansal",
   "description": "Abre un menú para acceder directamente a las secciones del blog.",
-  "version": "2.0.0",
+  "id": "jid0-q3ungvhJZPS76QgOLZ7TLp9qspk@jetpack",
+  "version": "2.0.1",
   "default_locale": "es",
 
   "background": {
@@ -16,10 +17,10 @@
     "tabs"
   ],
 
-  "icons": { "16": "icons/icon16.png",
-             "48": "icons/icon48.png",
-             "96": "icons/icon96.png",
-            "128": "icons/icon128.png" },
+  "icons": { "16": "icons/icon-16.png",
+             "48": "icons/icon-48.png",
+             "96": "icons/icon-96.png",
+            "128": "icons/icon-128.png" },
 
     "browser_action": {
      "default_icon": "icons/icon.png",
