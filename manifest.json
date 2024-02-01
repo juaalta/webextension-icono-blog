@@ -1,19 +1,19 @@
 {
 
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Icono Blog Cosillas de Juansal",
   "description": "Abre un menú para acceder directamente a las secciones del blog.",
   "id": "jid0-q3ungvhJZPS76QgOLZ7TLp9qspk@jetpack",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "default_locale": "es",
 
   "background": {
-    "scripts": ["background.js"]
+    "service_worker": "background.js",
+    "type": "module"
   },
 
   "permissions": [
     "contextMenus",
-    "activeTab",
     "tabs"
   ],
 
