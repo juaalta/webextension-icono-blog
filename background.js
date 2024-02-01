@@ -81,7 +81,7 @@ function onError(error) {
   console.log(`Error: ${error}`);
 }
 
-openOnNewTab = function(linkUrl) {
+openOnNewTab = function (linkUrl) {
   console.log(linkUrl);
   var creating = chrome.tabs.create({
     url: linkUrl,
@@ -96,7 +96,7 @@ openOnNewTab = function(linkUrl) {
 The click event listener, where we perform the appropriate action given the
 ID of the menu item that was clicked.
 */
-chrome.contextMenus.onClicked.addListener(function(info, tab) {
+chrome.contextMenus.onClicked.addListener(function (info, tab) {
   switch (info.menuItemId) {
     case "blog_pagina_principal":
       openOnNewTab("http://blog.juansal.com/");

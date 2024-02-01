@@ -1,6 +1,5 @@
-#menuPanel
-{
-    background-color: #629cd1;
+#menuPanel {
+	background-color: #629cd1;
 }
 
 #menuv {
@@ -11,14 +10,16 @@
 	font-style: normal;
 	line-height: normal;
 }
-#menuv ul, li {
-        list-style-type: none;
+
+#menuv ul,
+li {
+	list-style-type: none;
 }
 
 #menuv ul {
-        margin: 0;
-        padding: 0;
-		width: 185
+	margin: 0;
+	padding: 0;
+	width: 185
 }
 
 #menuv li {
@@ -27,9 +28,9 @@
 }
 
 #menuv li ul {
-        margin: 0 0 0 5;
-        padding: 0;
-		width: 180px;
+	margin: 0 0 0 5;
+	padding: 0;
+	width: 180px;
 }
 
 #menuv li ul li {
